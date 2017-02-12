@@ -1,0 +1,184 @@
+
+/* globalStyles */
+body {
+    overflow-x: hidden;
+    background-image: url('/images/new-zealand-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+ }
+ h1 {
+     font-family: 'Raleway', sans-serif!important;
+     font-weight: 300!important;
+     font-size: 70px!important;
+     color: white!important;
+ }
+ h2,h3{
+   color: #7f7f7f!important
+ }
+ p{
+   font-size: 20px;
+   color: #7f7f7f;
+ }
+ hr {
+    border-top: 1px solid #52bf90!important;
+    max-width: 50px;
+    margin: 30px auto;
+}
+ span#logo {
+  font: 400 30px/0.8 'Great Vibes', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+
+.introText {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/*sidebar 1*/
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 100px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #272727y;
+    padding: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*menu nav */
+.sidebar-nav-1 {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color:	#272727;
+}
+.sidebar-nav-1 li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav-1 li:nth-of-type(1) {
+    background: #52bf90;
+}
+.sidebar-nav-1 li i{
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  line-height: 100px;
+  color: #48494B;
+}
+.sidebar-nav-1 li i:hover{
+  color: #52bf90;
+}
+.sidebar-nav-1 li:nth-of-type(1) i{
+color: white;
+}
+
+/*social icons*/
+.sidebar-nav-2 {
+    top: 0;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #272727;
+}
+.sidebar-nav-2 li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav-2 li:nth-of-type(1) {
+    background: #07a2e2;
+}
+.sidebar-nav-2 li i{
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  line-height: 100px;
+}
+.sidebar-nav-2 li:nth-of-type(1) i{
+color: white;
+}
+/*index*/
+.homeDetails {
+    margin-top: 70%;
+}
+.homeDetails ul {
+    padding: 0;
+    margin-bottom: 25px;
+}
+.homeDetails li{
+  font-size: 20px;
+  list-style-type: none;
+  color: white;
+}
+.homeDetails button {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.homeDetails button:hover{
+    border: 2px solid #52bf90;;
+    background: transparent;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+}
+.homeContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    height: 100vh;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+    padding: 20px 50px 20px 150px;
+    color: #fff;
+    overflow: auto;
+    max-width: 600px;
+}
+/*footer*/
+footer{
+      background-color: #000000;
+      z-index: -100!important;
+      color: #48494B;
+      padding-top: 10px;
+}
+footer .navbar p{
+    font-size: 17px;
+}
+i.icon.ion-social-nodejs {
+    color: #52bf90;
+}
+/*projects*/
+section#projects .row{
+  margin-bottom: 5%;
+}
+/*services*/
+blockquote{
+  font-size: 25px!important;
+  margin-top: 5%!important;
+margin-bottom: 5%!important;
+  margin: 0;
+}
+section#services i {
+    font-size: 90px;
+    color: #52bf90;
+}
+/*contact*/
+form{
+  margin-top: 10%;
+}
+input[type="textbox"]{
+  height: 100px;
+}
