@@ -11,6 +11,7 @@ body{
      -o-background-size: cover!important;
      background-size: cover!important;
      overflow: auto;
+     position: relative;
  }
  h1 {
      font-family: 'Raleway', sans-serif!important;
@@ -20,15 +21,21 @@ body{
  }
  h2,h3{
    color: #7f7f7f!important
+    font-family: 'Raleway', sans-serif!important;
  }
  p{
    font-size: 20px;
    color: #7f7f7f;
  }
- hr {
+ hr{
     border-top: 1px solid #52bf90!important;
     max-width: 50px;
-    margin: 30px auto;
+    margin: 10px auto;
+}
+hr.blue {
+   border-top: 1px solid #07a2e2!important;
+   max-width: 50px;
+   margin: 10px auto;
 }
  span#logo {
   font: 400 30px/0.8 'Great Vibes', Helvetica, sans-serif;
@@ -118,7 +125,7 @@ color: white;
 }
 /*index*/
 .homeDetails {
-    margin-top: 70%;
+    margin-top: 50%;
 }
 .homeDetails ul {
     padding: 0;
@@ -130,15 +137,12 @@ color: white;
   color: white;
 }
 .homeDetails button {
-    border: 2px solid white;
+    border: 2px solid #52bf90;
     background: transparent;
     color: white;
 }
-.homeDetails button:hover{
-    border: 2px solid #52bf90;;
-    background: transparent;
-    -webkit-transition: 1s; /* Safari */
-    transition: 1s;
+.homeDetails button.blue{
+border: 2px solid #07a2e2
 }
 .homeContent {
     position: absolute;
@@ -154,15 +158,25 @@ color: white;
     overflow: auto;
     max-width: 600px;
 }
+input[type="checkbox"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 /*footer*/
 footer{
       background-color: #000000;
       z-index: -100!important;
       color: #48494B;
+      margin-top: 100px;
       padding-top: 10px;
+      position: static;
 }
 footer .navbar p{
     font-size: 17px;
+}
+footer svg{
+  height: 20px;
 }
 i.icon.ion-social-nodejs {
     color: #52bf90;
@@ -191,9 +205,13 @@ form {
 form .form-control{
   height: 50px;
   font-size: 20px;
+  background-color: #242424;
+  border: none;
 }
 form input[type="textbox"]{
-height: 100px;
+height: 200px;
+background-color: #242424;
+border: none;
 }
 button[type="submit"]{
   border: 2px solid white;
