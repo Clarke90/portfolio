@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 276">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fdfdfd;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #7e89a3;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>Screen Shot 2017-02-24 at 9.10.36 PM</title>
+  <g id="Page-1">
+    <g id="iphone">
+      <path id="bezel" class="cls-1" d="M131,259a16,16,0,0,1-16,16H17A16,16,0,0,1,1,259V17A16,16,0,0,1,17,1h98a16,16,0,0,1,16,16V259h0Z"/>
+      <rect id="screen" class="cls-2" x="10" y="37" width="112" height="199.08"/>
+      <path id="speaker" class="cls-3" d="M78,27H56V24H78v3h0Z"/>
+      <circle id="camera" class="cls-3" cx="67" cy="13" r="3"/>
+      <ellipse id="lock" class="cls-3" cx="66" cy="255" rx="10" ry="10"/>
+    </g>
+  </g>
+</svg>

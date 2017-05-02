@@ -27,4 +27,9 @@ router.get('/services', function(req,res,next){
   res.render('services', { title: 'Services'});
 });
 
+/* GET single project temp. */
+router.get('/single-project', function(req,res,next){
+  res.render('single-project', { title: 'single-project'});
+});
+
 module.exports = router;

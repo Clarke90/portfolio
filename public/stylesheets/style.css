@@ -19,13 +19,29 @@ body{
      font-size: 70px!important;
      color: white!important;
  }
- h2,h3{
+ h2{
    color: #7f7f7f!important
+    font-family: 'Raleway', sans-serif!important;
+ }
+
+ h3.subHeading{
+    color: #fff!important;
     font-family: 'Raleway', sans-serif!important;
  }
  p{
    font-size: 20px;
    color: #7f7f7f;
+ }
+ li{
+   font-size: 20px;
+   color: #7f7f7f;
+   margin-left: 5px;
+ }
+ li i{
+   margin-right: 5px;
+ }
+ ul{
+    padding: 0;
  }
  hr{
     border-top: 1px solid #52bf90!important;
@@ -45,7 +61,6 @@ hr.blue {
 
 .introText {
     margin-top: 3%;
-    margin-left: 5%;
     margin-bottom: 5%;
 }
 
@@ -119,13 +134,26 @@ color: white;
   height: 100px;
   font-size: 40px;
   line-height: 100px;
+    color: #48494B;
+}
+.sidebar-nav-2 li i:hover{
+  color: #07a2e2;
 }
 .sidebar-nav-2 li:nth-of-type(1) i{
 color: white;
 }
+/*portfolio*/
+.hover img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover:hover img {
+	opacity: .5;
+}
 /*index*/
 .homeDetails {
-    margin-top: 50%;
+    margin-top: 25%;
 }
 .homeDetails ul {
     padding: 0;
@@ -144,6 +172,11 @@ color: white;
 .homeDetails button.blue{
 border: 2px solid #07a2e2
 }
+button{
+  border: 2px solid #52bf90;
+  background: transparent;
+  color: white;
+}
 .homeContent {
     position: absolute;
     top: 0;
@@ -158,10 +191,33 @@ border: 2px solid #07a2e2
     overflow: auto;
     max-width: 600px;
 }
-input[type="checkbox"] {
+button#aboutMe {
     position: absolute;
     top: 0px;
     right: 0px;
+    border: 2px solid #52bf90;
+    background: transparent;
+    color: white;
+    margin: 25px 25px 0 0;
+}
+button#aboutMe.blue {
+    border: 2px solid 07a2e2;
+}
+
+#favoriteThings {
+    background: rgba(0,0,0,0.3);
+}
+#shortBio{
+  margin-top: 15%;
+}
+/*single project template*/
+.banner {
+    padding: 20px;
+    background-color: #242424;
+}
+.row.branding {
+    background: #242424;
+    margin-top: -6%;
 }
 /*footer*/
 footer{
@@ -180,6 +236,10 @@ footer svg{
 }
 i.icon.ion-social-nodejs {
     color: #52bf90;
+}
+/*about*/
+section#about ul>li{
+list-style-type: none;
 }
 /*projects*/
 section#projects .row{
@@ -219,8 +279,122 @@ button[type="submit"]{
   color: white;
 }
 button[type="submit"]:hover{
-  border: 2px solid #52bf90;;
+  border: 2px solid #52bf90;
   background: transparent;
   -webkit-transition: 1s; /* Safari */
   transition: 1s;
 }
+/*modal*/
+.modal-content{
+  background-color:rgba(82,191,144,0.9);
+}
+.modal-content p{
+  color: #efefef;
+}
+.modal-content button{
+  border: 2px solid #419873;
+  background: #242424;
+  color: white;
+}
+/*blockquote*/
+blockquote{
+  background: #242424;
+}
+/*svg iphone*/
+.phoneBlock{
+
+}
+svg {
+    height: 100%;
+    width: 30%;
+    margin-left: 59%;
+    margin-top: 4%;
+}
+path.st0 {
+    fill: none!important;
+  }
+/*Website pre loader*/
+div#preLoader {
+    background: rgba(0,0,0,0.8);
+position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
+.loader {
+  /*border: 16px solid #f3f3f3;*/
+  border-radius: 50%;
+  border-top: 16px solid #52bf90;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-left: 45%;
+  margin-top: 20%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#frameScale { width: 300px; height: 250px; padding: 0; position:relative;  top:0px; overflow: hidden; }
+    #frame { width: 300px; height: 250px; position:relative;  top:0px; }
+
+
+
+
+
+/*==================================================
+=           Basic Media Queries             =
+==================================================*/
+
+
+    /*==========  Non-Mobile First  ==========*/
+
+    /* very Devices, Wide Screens */
+    @media only screen and (max-width : 1440px) {
+      body .container-fluid {
+         margin-left: 5%;
+     }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      body .container-fluid {
+         margin-left: 5%;
+     }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      body .container-fluid {
+         margin-left: 12%;
+     }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      body .container-fluid {
+         margin-left: 15%;
+     }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      body .container-fluid {
+         margin-left: 15%;
+     }
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }
