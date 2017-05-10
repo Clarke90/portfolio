@@ -1,27 +1,33 @@
 
 /* globalStyles */
 html{
-  height: 100%;
+
+}
+section{
+  margin-left: 50px;
 }
 body{
     background-image: url('/images/new-zealand-dark.jpg');
-     background-repeat: no-repeat;
-     -webkit-background-position: 50% 30% !important;
-     -moz-background-position: 80% 0% !important;
-     background-position: 50% 30% !important;
-     -webkit-background-size: cover!important;
-     -moz-background-size: cover!important;
-     -o-background-size: cover!important;
-     background-size: cover!important;
-     overflow: auto;
-     position: relative;
-     margin-left: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
  }
  h1 {
-     font-family: 'Raleway', sans-serif!important;
+  /*   font-family: 'Raleway', sans-serif!important;
      font-weight: 300!important;
      font-size: 70px!important;
-     color: white!important;
+     color: white!important;*/
+     color: #ffffff; 
+      font-family: 'Raleway',sans-serif; 
+      font-size: 62px; 
+      font-weight: 800;
+       line-height: 72px; 
+       margin: 0 0 24px; 
+       text-align: center; 
+       text-transform: uppercase; 
+     }
  }
  h2{
    color: #7f7f7f!important
@@ -270,9 +276,9 @@ footer{
     z-index: -100!important;
     color: #48494B;
     padding-top: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    position: absolute;
 }
 footer .navbar p{
     font-size: 17px;
@@ -450,9 +456,7 @@ position: fixed;
       body .container-fluid {
          margin-left: 15%;
      }
-     .homeContent {
-        padding: 20px 50px 20px 50px;
-      }
+   
        svg{
         display: none;
       }
