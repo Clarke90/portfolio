@@ -23,8 +23,8 @@ router.get('/projects', function(req,res,next){
 });
 
 /* GET services page. */
-router.get('/services', function(req,res,next){
-  res.render('services', { title: 'Services'});
+router.get('/skills', function(req,res,next){
+  res.render('skills', { title: 'Skills'});
 });
 
 /* GET single project temp. */

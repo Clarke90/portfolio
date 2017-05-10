@@ -1,5 +1,8 @@
 
 /* globalStyles */
+html{
+  height: 100%;
+}
 body{
     background-image: url('/images/new-zealand-dark.jpg');
      background-repeat: no-repeat;
@@ -12,6 +15,7 @@ body{
      background-size: cover!important;
      overflow: auto;
      position: relative;
+     margin-left: 100px;
  }
  h1 {
      font-family: 'Raleway', sans-serif!important;
@@ -43,6 +47,7 @@ body{
  ul{
     padding: 0;
  }
+
  hr{
     border-top: 1px solid #52bf90!important;
     max-width: 50px;
@@ -62,6 +67,40 @@ hr.blue {
 .introText {
     margin-top: 3%;
     margin-bottom: 5%;
+}
+
+/*Tag Cloud*/
+.tagcloud01 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tagcloud01 ul li {
+  display: inline-block;
+  margin: 0 .3em .3em 0;
+  padding: 0;
+}
+.tagcloud01 ul li a {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 1em;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.tagcloud01 ul li a:hover {
+  background-color: #3498db;
+  border: 1px solid #3498db;
+  color: #fff;
 }
 
 /*sidebar 1*/
@@ -177,6 +216,14 @@ button{
   background: transparent;
   color: white;
 }
+a[type="button"]{
+  border: 2px solid #52bf90;
+  background: transparent;
+  color: white;
+  padding:7px;
+  min-width: 100px;
+}
+
 .homeContent {
     position: absolute;
     top: 0;
@@ -221,12 +268,13 @@ button#aboutMe.blue {
 }
 /*footer*/
 footer{
-      background-color: #000000;
-      z-index: -100!important;
-      color: #48494B;
-      margin-top: 100px;
-      padding-top: 10px;
-      position: static;
+    background-color: #000000;
+    z-index: -100!important;
+    color: #48494B;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 footer .navbar p{
     font-size: 17px;
@@ -255,6 +303,25 @@ margin-bottom: 5%!important;
 section#services i {
     font-size: 90px;
     color: #52bf90;
+}
+/*skills*/
+ .bg-aqua{
+      background-color: #242424;
+      height: 100px;
+      width: 100%;
+      border:2px solid #52bf90 ;
+ }
+ .progress {
+background: none;
+}
+ .boxes{
+margin-bottom:5%;
+}
+ .tagcloud01 {
+    width: 80%;
+}
+img.skillsSvg {
+    width: 95px;
 }
 /*contact*/
 form {

@@ -20,24 +20,20 @@
 
 // iphone animations
 setTimeout(function() {
-  $("#screen").fadeIn('slow');
-  $( "#navigation" ).fadeIn( 2000 ).delay( 800 ).fadeIn( 400 );
-  $( "#slider" ).fadeIn( 1000 ).delay( 1000 )
-  $( "#calltoaction" ).fadeIn( 7000 ).delay( 1400 ).fadeIn( 400 );
+    $("#screen").fadeIn('slow');
+    $( "#navigation" ).fadeIn( 2000 ).delay( 800 ).fadeIn( 400 );
+    $( "#slider" ).fadeIn( 1000 ).delay( 1000 )
+    $( "#calltoaction" ).fadeIn( 7000 ).delay( 1400 ).fadeIn( 400 );
 
-$( "#BottomLeftBox" ).fadeIn( 3000 ).delay( 1400 );
-$( "#BottomRightBox" ).fadeIn( 4000 ).delay( 1800 );
-$( "#topRightBox" ).fadeIn( 5000 ).delay( 2000 );
-$( "#topLeftBox" ).fadeIn( 6000 ).delay( 2200 );
+  $( "#BottomLeftBox" ).fadeIn( 3000 ).delay( 1400 );
+  $( "#BottomRightBox" ).fadeIn( 4000 ).delay( 1800 );
+  $( "#topRightBox" ).fadeIn( 5000 ).delay( 2000 );
+  $( "#topLeftBox" ).fadeIn( 6000 ).delay( 2200 );
 
-$( "#elipse" ).fadeIn( 8000 ).delay( 2000 );
-$( "#contentBox" ).fadeIn( 10000 ).delay( 2000 );
+  $( "#elipse" ).fadeIn( 8000 ).delay( 2000 );
+  $( "#contentBox" ).fadeIn( 10000 ).delay( 2000 );
 
-$( "#footer" ).fadeIn( 12000 ).delay( 2000 );
-
-
-
-
+  $( "#footer" ).fadeIn( 12000 ).delay( 2000 );
 
 }, 2000); // <-- time in milliseconds
 
@@ -57,3 +53,12 @@ $( "#footer" ).fadeIn( 12000 ).delay( 2000 );
      $( 'hr' ).toggleClass( "blue" );
      $( 'button' ).toggleClass( "blue" );
   });
+
+//carousel
+$(document).ready(function() {
+    $('#myCarousel').carousel({
+      interval: 10000
+  })
+});
+
+
