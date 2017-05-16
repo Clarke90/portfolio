@@ -1,49 +1,47 @@
 <% include ./partials/header.ejs %>
 
     <!-- Page Content -->
-    <section id="contact">
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                        <div class="introText">
-                            <h1 class="text-center"><%= title %></h1>
-                        
-                        </div>
-
-                        <form>
-                            <div class="form-group row text-center">
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputPassword3" placeholder="First Name">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputPassword3" placeholder="Last Name">
-                                </div>
-                            </div>
-                            <!--  -->
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="inputPassword3" placeholder="Subject">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                            </div>
-                            <!--  -->
-                            <div class="form-group row">
-                                <div class="col-sm-12">
-                                    <input type="textbox" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <!--  -->
-                            <div class="form-group row">
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Send</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div> <!-- end of body col-sm-9 -->
+     <main id="panel" class="slideout-panel contain">
+        <div class="row">
+            <header>
+                 <button class="toggle-button"><% include ./partials/menu.ejs %></button>
+            </header>
+                <div class="introText">
+                    <h1 class="text-center"><%= title %></h1>
+                    <p>Feel Free to use the form below to drop me an e-mail. Old-fashioned phone calls or text work too  <br>705.795.0645</p>
+                </div>
+        <form id="contactForm">
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
             </div>
-        </div>
+
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Mobile No</label>
+            </div>
+
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Message</label>
+            </div>
+            <div class="group">
+                <center> <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button></center>
+            </div>
+        </form>
     </section>
 
 

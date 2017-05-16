@@ -1,29 +1,106 @@
 <% include ./partials/header.ejs %>
 
     <!-- Page Content -->
-    <section id="about">
-        <div id="page-content-wrapper">
-        </div>
-        <div class="container-fluid">
+ <main id="panel" class="slideout-panel contain">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="introText">
-                        <h1><%= title %></h1>
-                    </div>
-                    
-                        <img src="images/user.png" alt="">
-                        <h2>Hi, I am Chad!</h2>
-                        <!-- <hr> -->
-                        <p>Hey Im Chad, I’m a web developer. I spend my days, practically every day, experimenting with HTML, CSS, PHP and JavaScript; dabbling with Nodejs and angular; and inhaling a wide variety of potentially useless information through my news feed. I build websites that delight and inform. I do it well.</p>
-                        <p>At the moment, I’m a developer for Napoleon in Barrie, Ontario working in marketing. My duties include maintaining, building and designing websites. I take pride in crafting fun landing pages that drive traffic for all sorts of contests and promotions.</p>
-                        <p>I’ve focused my energies on the web and working out, which happily has proven itself to be a wonderful decision.</p>
-                    </div>
+            <header>
+                   <button class="toggle-button"><% include ./partials/menu.ejs %></button>
+            </header>
+        
+               <div class="row">
+                   <div class="col-sm-8">
+                   <aside class="info aside section light">
+                       <div class="light">
 
-                </div>
-            </div>
-        <!-- ./ row -->
-        </div>
-        </div>
+                       <img id="aboutImg" src="/images/user.png">
+                           <h2>About</h2>
+                         <p> I’m a web developer. I spend my days, practically every day, experimenting with HTML, CSS, PHP and JavaScript; dabbling with Nodejs and angular; and inhaling a wide variety of tech news through my rss feed. I build websites that delight and inform. I do it well.</p>
+
+                        <p>At the moment, I’m a developer for Napoleon in Barrie, Ontario working in marketing. My duties include maintaining, building and designing websites. I take pride in crafting fun landing pages that drive traffic for all sorts of contests and promotions.</p>
+
+                        <p>I’ve focused my energies on the web and working out, which happily has proven itself to be a wonderful decision.</p>
+                       </div>
+                       </aside>
+
+                       <aside class="info aside section">
+                           <div class="dark">
+                           <h2>Work Experience</h2>
+
+                           <h3>Web Developer</h3>
+                           <p>I currently work as a web deveoper with Napoleon building Click Through / lead generation lanidng pages for variety of promotional events. While performing my weekly assessments and updating all websites / portal built with Wordpress, DNN and PHP to look for potential problems or crashes</p>
+                          
+                           <h3>Freelance</h3>
+                           <p>In my early days as a self taught web devolper i would do freelance web design for experience. While trying to progress my skills. This meant writing external and internal documentation, designing moc ups, writing content and being there for my clients maintaining and updating their websites as needed. </p>
+                           </div>
+                        </aside>
+
+                       
+
+                        <aside class="info aside section">
+                           <div class="light">
+            
+                                <div id="chartContainer" style="height: 300px; width: 100%;">
+                        </aside>
+
+                   </div>
+
+                    <div class="col-sm-4">
+                    <aside class="info aside section">
+                           <div class="medium">
+                                <ul>
+                                    <li><i class="fi-marker"></i> Toronto, Ontario</li>
+                                     <li><i class="fi-mail"></i> chadclarke15@gmail.com</li>
+                                      <li><i class="fi-telephone"></i> 705-795-0645</li>
+                                </ul>
+                           </div>
+                       </aside>
+                       <aside class="info aside section">
+                           <div class="dark">
+                           <h2>Languages</h2>
+                           <p>
+                                    Some background info on some of the most common coding languages i use today.</p>
+                           
+                            <h3>HTML & CSS</h3>
+                            <div class="level-bar-inner" data-level="80%" style="width: 80%;"></div>
+                           <h3>Java script & Jquery</h3>
+                           <div class="level-bar-inner" data-level="65%" style="width: 65%;"></div>
+                           <h3>Php</h3>
+                            <div class="level-bar-inner" data-level="70%" style="width: 70%;"></div>
+                           <h3>ASP.net</h3>
+                            <div class="level-bar-inner" data-level="70%" style="width: 70%;"></div>
+                           <h3>Nodejs</h3>
+                            <div class="level-bar-inner" data-level="50%" style="width: 50%;"></div>
+                           </div>
+                     
+                       </aside>
+                       <aside class="info aside section">
+                           <div class="light">
+                           <h2>Education</h2>
+                                <ul>
+                                <h3></h3>
+                                    <li> <h3>Web Design & Development</h3>
+                                        <span><i class="fi-trophy"></i> Georgian College </span>
+                                    </li>
+                                     <li><h3>Fire Fighting / EMR</h3>
+                                         <span><i class="fi-trophy"></i> Fire ETC</span>
+                                     </li>
+                                </ul>
+                           </div>
+                       </aside>
+                       <aside class="info aside section">
+                           <div class="medium">
+                           <h2>Favorite coding music</h2>
+                                <ul>
+                                    <li><i class="fi-music"></i> Russ</li>
+                                     <li><i class="fi-music"></i> Kenrick Lamer</li>
+                                      <li><i class="fi-music"></i> Big Sean</li>
+                                </ul>
+                           </div>
+                       </aside>
+                   </div>
+               </div>
+   
+  
     </section>
 
 
