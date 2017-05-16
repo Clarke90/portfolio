@@ -1,5 +1,5 @@
 
-</section>
+
 <footer>
   <div class="container-fluid">
     <div class="row">
@@ -12,9 +12,28 @@
 
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/javascripts/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
+
+  <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+ 
+      // Toggle button 
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+    </script> 
+
 
 </body>
 </html>
