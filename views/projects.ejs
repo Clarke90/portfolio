@@ -1,73 +1,91 @@
 <% include ./partials/header.ejs %>
 
 <!-- Page Content -->
-<section id="projects">
-      <div id="page-content-wrapper">
-          <div class="container-fluid">
-              <div class="row">
+<main id="panel" class="slideout-panel contain">
+    <div class="row">
+    <header>
+      <button class="toggle-button"><% include ./partials/menu.ejs %></button>
+    </header>
+            
                   <div class="col-lg-12">
                     <div class="introText">
                       <h1><%= title %></h1>
                       <p>A collection of recently completed projects</p>
                    </div>
+                   </div>
                    <!-- gallery row one -->
-                   <div class="row row-one">
+                 
                      <div class="col-sm-7 col-sm-offset-1">
                        <div>
                          <a href="single-project"><img src="/images/responsive-tablet.png"></a>
                        </div>
                      </div>
-                     <div class="col-sm-4">
+                     <div class="col-sm-4 text-center">
                         <h3 class="text-center subHeading">-Latest Project-</h3>
                         <p> A web application built on the Node Express framework,for the Muskoka Steam Ship & Discovery childrens day camp. The purpose of this app is to improve efficeny for parents and staff registering there child in day camps. </p>
                       </br>
                       <a name="button" href="http://muskokafinal.herokuapp.com/" target="_blank">View App</a>
                      </div>
-                   </div>
+                  
                    <!-- gallery row one -->
-                   <div class="row row-two">
+                  <!--  <div class="row row-two">
                    <h3 class="subHeading">-Recent Projects-</h3>
                      <div class="col-sm-4">
                          <div id="frameScale">
                             <iframe  id="frame" src="https://www.cannabisconsulting.ca/" width=300px; height=250px; ></iframe>
                          </div>
                          <a href="#"><p>Cannabis Consulting</p></a>
-                     </div>
-                     <div class="col-sm-4">
-                       <div id="frameScale ">
-                          <iframe  id="frame" src="http://www.hitautomation.com/" width=300px; height=250px; ></iframe>
-                       </div>
-                       <a href="#"><p>Hit Automation</p></a>
-                     </div>
-                     <div class="col-sm-4">
-                       <div id="frameScale ">
-                          <iframe  id="frame" src="http://www.rowantreemassage.ca/" width=300px; height=250px; ></iframe>
-                       </div>
-                       <a href="#"><p>Rowantree Massage</p></a>
-                     </div>
-                   </div>
-                   <!-- second row -->
-                   <div class="row row-two">
-                    <h3 class="subHeading">-Recent Projects-</h3>
-                     <div class="col-sm-4">
-                        <img src="http://placehold.it/300x250">
-                       <a href="#"><p>Powassan Mini Storage</p></a>
-                     </div>
-                     <div class="col-sm-4">
-                       <img src="http://placehold.it/300x250">
-                       <a href="#"><p>test</p></a>
-                     </div>
-                     <div class="col-sm-4">
-                       <img src="http://placehold.it/300x250">
-                       <a href="#"><p>test</p></a>
-                     </div>
-                   </div>
-                  </div>
+                     </div> -->
                   
+                   </div>
+                   <section>
+         <div class="row project-row">
+           <div class="col-sm-4 text-center">
+             <img src="/images/projects/cannabisConsulting.jpg">
+           </div>
+            <div class="col-sm-4 text-center">
+              <img src="/images/projects/cannabisContractor.jpg">
+            </div>
+              <div class="col-sm-4 text-center">
+               <img src="/images/projects/cyberspace.jpg">
               </div>
+        </div>
+          <div class="row project-row">
+           <div class="col-sm-4 text-center">
+             <img src="/images/projects/inboundMarketing.jpg">
+           </div>
+            <div class="col-sm-4 text-center">
+              <img src="/images/projects/muskokaSteamShip.jpg">
+            </div>
+              <div class="col-sm-4 text-center">
+               <img src="/images/projects/powassanMiniStorage.jpg">
+              </div>
+        </div>
+<div class="row project-row">
+           <div class="col-sm-4 text-center">
+             <img src="/images/projects/builtInGrill.jpg">
+           </div>
+            <div class="col-sm-4 text-center">
+              <img src="/images/projects/freeAccessoryEvent.jpg">
+            </div>
+              <div class="col-sm-4 text-center">
+               <img src="/images/projects/seasonGriller.jpg">
+              </div>
+        </div>
+        <div class="row project-row">
+           <div class="col-sm-4 text-center">
+             <img src="/images/projects/vip.jpg">
+           </div>
+            <div class="col-sm-4 text-center">
+              <img src="/images/projects/jaysShop.jpg">
+            </div>
+              <div class="col-sm-4 text-center">
+               <img src="/images/projects/autoMoBox.jpg">
+              </div>
+        </div>
+                   </section>
 
-          </div>
-      </div>
+  </div>
 </section>
 
 
