@@ -1,15 +1,20 @@
-v
+
 /* globalStyles */
 
-html {}
-
+.row {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
 body {
     width: 100%;
     height: 100%;
+     background-image: url('/images/black-linen.png');
 }
 
 main#panel {
     background-image: url('/images/new-zealand-dark.jpg');
+    max-width: 1200px;
+    margin: 0 auto;
 }
 p{
   font-size: 18px;
@@ -25,7 +30,11 @@ i {
     color: #48494B;
     font-size: 18px;
 }
-
+.project-row img{
+   border: 2px solid #f4f4f4;
+    padding: 4px;
+    width: 100%;
+}
 .box i {
     color: #242424;
 }
@@ -164,7 +173,6 @@ section.menu-section {
     left: 0;
     bottom: 0;
     height: 100%;
-    height: 100vh;
     background: rgba(0, 0, 0, 0.3);
     padding: 20px 50px 20px 75px;
     color: #fff;
@@ -254,11 +262,12 @@ footer {
 }
 section#whatido {
     background: #2a2c2d;
-    padding: 120px 0 120px 0;
+    padding: 120px 25px 120px 25px;
+
 }
 section#projects {
     background: #353839;
-    padding: 120px 0 120px 0;
+    padding: 120px 25px 120px 25px;
 }
 .box {
     background: #fff;
@@ -266,18 +275,19 @@ section#projects {
     text-align: center;
     padding: 40px 20px;
     margin: 0 0 20px;
-    min-height: 300px;
+    min-height: 363px;
 }
 .box p {
     color: #242424;
 }
 
 /*SVG phone*/
-svg {
+#phone svg {
     height: 100%;
     width: 38%;
-    margin-top: 4%;
+    margin-top: 14%;
 }
+
 .st0 {
     fill: none!important;
     stroke: #7E89A3;
