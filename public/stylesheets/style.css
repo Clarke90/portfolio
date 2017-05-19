@@ -8,7 +8,9 @@
 body {
     width: 100%;
     height: 100%;
-     background-image: url('/images/black-linen.png');
+     background-image: url('/images/black-Linen.png');
+     background-color: #242424;
+     background-repeat: repeat;
 }
 
 main#panel {
@@ -186,7 +188,7 @@ section.menu-section {
     line-height: 30px;
     margin-bottom: 100px;
 }
-button.toggle-button {
+#phone button.toggle-button {
     background: transparent;
     border: none;
     top: 0;
@@ -194,6 +196,15 @@ button.toggle-button {
     left: 0;
     height: 120px;
     width: 120px;
+}
+button.toggle-button {
+    background: transparent;
+    border: none;
+    top: 10px;
+    position: absolute;
+    left: 10px;
+    height: 50px;
+    width: 50px;
 }
 button.toggle-button:hover {
     outline: 0;
