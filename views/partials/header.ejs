@@ -25,18 +25,22 @@
 window.onload = function () {
   var chart = new CanvasJS.Chart("chartContainer", {
     title:{
-      text: "My First Chart in CanvasJS"              
+      color:  "#66cb8c",
+      backgroundColor: "#353839",
+      text: "My Skils"              
     },
     data: [              
     {
       // Change type to "doughnut", "line", "splineArea", etc.
-      type: "column",
+      type: "line",
       dataPoints: [
-        { label: "apple",  y: 10  },
-        { label: "orange", y: 15  },
-        { label: "banana", y: 25  },
-        { label: "mango",  y: 30  },
-        { label: "grape",  y: 28  }
+        { label: "Google Analytics",  y: 10  },
+        { label: "Google Adwords", y: 15  },
+        { label: "Adobe Suite", y: 25  },
+        { label: "Email Marketing",  y: 30  },
+        { label: "Mac OS",  y: 30  },
+        { label: "SE0",  y: 30  },
+        { label: "windows",  y: 28  }
       ]
     }
     ]
