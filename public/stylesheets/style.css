@@ -20,6 +20,14 @@ main#panel {
 p{
   font-size: 18px;
 }
+nav a:hover {
+    color: #efefef;
+     text-decoration: line-through;
+}
+nav li {
+    font-size: 20px;
+}
+
 p,
 ul {
     color: #efefef;
@@ -141,6 +149,10 @@ section.menu-section {
     list-style: none;
     background-color: #272727;
     height: 100%;
+}
+.section-list a:{
+    display: block;
+    padding: 10px 20px;
 }
 .sidebar-nav-1 li {
     text-align: center;
