@@ -17,6 +17,9 @@ main#panel {
     max-width: 1200px;
     margin: 0 auto;
 }
+a:hover{
+    text-decoration: none;
+}
 p{
   font-size: 18px;
 }
@@ -202,8 +205,7 @@ button.toggle-button {
     top: 0;
     position: absolute;
     left: 0;
-    height: 120px;
-    width: 120px;
+    height: 50px;
 }
 button.toggle-button:hover {
     outline: 0;
@@ -240,11 +242,12 @@ section.calltoaction {
     background-color: #222;
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 100px 100px;
+    padding: 50px 50px;
     color: #999;
 }
 
